@@ -25,7 +25,6 @@ export default function Home({ usersData }) {
 			<Head>
 				<title>Monsterbook</title>
 			</Head>
-
 			<h1 className={styles.title}>Monsterbook</h1>
 			<SearchBox onChange={filterUsers} placeholder="Search Monsters" />
 			<CardList users={users} />
