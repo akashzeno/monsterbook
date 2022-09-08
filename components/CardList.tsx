@@ -1,7 +1,12 @@
 import styles from "../styles/CardList.module.css";
-import Card from "./Card.js";
+import Card from "./Card";
+import { User } from "../pages/index";
 
-export default function CardList({ users }) {
+type CardListProps = {
+	users: User[];
+};
+
+export default function CardList({ users }: CardListProps) {
 	return (
 		<div className={styles.cardList}>
 			{users.map((user) => {

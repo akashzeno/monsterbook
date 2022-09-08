@@ -1,7 +1,12 @@
 import styles from "../styles/Card.module.css";
 import Image from "next/image";
+import { User } from "../pages/index";
 
-export default function Card({ user: { id, name, email } }) {
+type CardProps = {
+	user: User;
+};
+
+export default function Card({ user: { id, name, email } }: CardProps) {
 	return (
 		<div className={styles.cardContainer}>
 			<Image
